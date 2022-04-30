@@ -1,0 +1,79 @@
+//@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;400&display=swap');
+//font-family: 'Antonio', sans-serif;
+
+
+ //Light 300
+    //Bold 700
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    //font-family: 'Lato', sans-serif;
+    font-family: 'Antonio', sans-serif;
+}
+
+body{
+    background: rgb(222, 222, 222);
+    scroll-behavior:smooth;
+}
+
+
+.contGridBase{
+    width: 100%;
+    max-width: 1440px;
+    padding: 0px 0px;
+    margin: auto;
+    background: rgb(81, 1, 57);
+    display: grid;
+    //grid-gap:1em;
+    grid-template-columns: 280px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "GridTablero   GridHeader"
+                         "GridTablero   GridHeader"
+                         "GridTablero   GridSectionOfertas"
+                         "GridTablero   GridSectionSobreNosotros"
+                         "GridTablero   GridSectionClientes"
+                         "GridTablero   GridFooter";
+
+    .GridTablero{
+        //padding: 10px 0px;
+        //background: rgb(226, 230, 33);
+        grid-area: GridTablero; 
+        position: fixed;
+        width: 280px;
+    }
+
+    .GridHeader{
+        //padding: 10px 0px;
+        background: rgb(255, 255, 255);
+        height: 550px;
+        grid-area: GridHeader; 
+    }
+
+    .GridSectionOfertas{
+        //padding: 10px 0px;
+        //background: brown;
+        grid-area: GridSectionOfertas; 
+    }
+
+    .GridSectionSobreNosotros{
+        //padding: 10px 0px;
+        //background: brown;
+        grid-area: GridSectionSobreNosotros; 
+    }
+
+    .GridSectionClientes{
+        //padding: 10px 0px;
+        //background: brown;
+        grid-area: GridSectionClientes; 
+    }
+    .GridFooter{
+        //padding: 10px 0px;
+        //background: brown;
+        grid-area: GridFooter; 
+    }
+}
+

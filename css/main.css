@@ -1,0 +1,599 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Antonio", sans-serif;
+}
+
+body {
+  background: rgb(222, 222, 222);
+  scroll-behavior: smooth;
+}
+
+.contGridBase {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0px 0px;
+  margin: auto;
+  background: rgb(81, 1, 57);
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "GridTablero   GridHeader" "GridTablero   GridHeader" "GridTablero   GridSectionOfertas" "GridTablero   GridSectionSobreNosotros" "GridTablero   GridSectionClientes" "GridTablero   GridFooter";
+}
+.contGridBase .GridTablero {
+  grid-area: GridTablero;
+  position: fixed;
+  width: 280px;
+}
+.contGridBase .GridHeader {
+  background: rgb(255, 255, 255);
+  height: 550px;
+  grid-area: GridHeader;
+}
+.contGridBase .GridSectionOfertas {
+  grid-area: GridSectionOfertas;
+}
+.contGridBase .GridSectionSobreNosotros {
+  grid-area: GridSectionSobreNosotros;
+}
+.contGridBase .GridSectionClientes {
+  grid-area: GridSectionClientes;
+}
+.contGridBase .GridFooter {
+  grid-area: GridFooter;
+}
+
+.contTablero {
+  width: 100%;
+  height: 100vh;
+  padding: 10px 0px;
+  background: rgb(12, 20, 59);
+}
+.contTablero .contTablero_cicle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgb(79, 79, 238);
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contTablero .contTablero_cicle .contTablero_cicle_title {
+  color: white;
+  font-weight: 700;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.contTablero .contTablero_ul {
+  width: 75%;
+  margin: 30px auto;
+  padding: 10px 0px;
+  background: rgba(0, 21, 99, 0.63);
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.contTablero .contTablero_ul .contTablero_ul_li {
+  list-style: none;
+  margin: 10px 20px;
+}
+.contTablero .contTablero_ul .contTablero_ul_li .liEnlace {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+}
+.contTablero .contTablero_ul .contTablero_ul_li .liEnlace .iconMenu {
+  width: 30px;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.contTablero .contTablero_ul .contTablero_ul_li .liEnlace .iconArrow {
+  margin-left: -10px;
+  color: rgb(235, 235, 93);
+  transition: 0.2s all;
+  opacity: 0;
+}
+.contTablero .contTablero_ul .contTablero_ul_li .liEnlace:hover {
+  color: rgb(235, 235, 93);
+}
+.contTablero .contTablero_ul .contTablero_ul_li .liEnlace:hover .iconMenu {
+  color: rgb(235, 235, 93);
+}
+.contTablero .contTablero_ul .contTablero_ul_li .liEnlace:hover .iconArrow {
+  margin-left: 10px;
+  opacity: 1;
+}
+.contTablero .contTablero_pie {
+  width: 100%;
+  padding: 10px 0px;
+  background: rgba(0, 21, 99, 0.63);
+  text-align: center;
+}
+.contTablero .contTablero_pie .contTablero_pie_title {
+  color: rgb(235, 235, 93);
+  font-weight: 700;
+  font-size: 20 px;
+}
+.contTablero .contTablero_pie .contTablero_pie_number {
+  margin-top: 10px;
+  color: white;
+  font-weight: 300;
+  font-size: 12px;
+}
+.contTablero .contTablero_pie .contTablero_pie_text {
+  width: 80%;
+  margin: 10px auto;
+  color: rgb(216, 215, 215);
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.contHeader {
+  width: 100%;
+  padding: 10px 0px;
+  background: rgb(52, 52, 52);
+  position: relative;
+}
+.contHeader .contHeader_box1 {
+  width: 85%;
+  height: 520px;
+  background: rgb(12, 20, 59);
+  border-radius: 0px 0px 20px 0px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.contHeader .contHeader_box2 {
+  width: 85%;
+  height: 450px;
+  background-image: url(../images/CARNE2.jpg);
+  background-size: 100% 100%;
+  border-radius: 0px 0px 0px 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 50px;
+}
+.contHeader .contHeader_box2 .contHeader_box2_title {
+  width: 50%;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 20px;
+  color: rgb(235, 235, 93);
+  text-transform: uppercase;
+}
+.contHeader .contHeader_box2 .contHeader_box2_button {
+  width: 150px;
+  height: 35px;
+  background: rgba(0, 21, 99, 0.63);
+  border: 1px solid rgb(235, 235, 93);
+  font-weight: 700;
+  border-radius: 10px;
+  margin-right: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.contHeader .contHeader_box2 .contHeader_box2_button .contHeader_box2_button_externo {
+  width: 100%;
+  height: 100%;
+  background: rgb(12, 20, 59);
+  transform: translate(-100%);
+  transition: 0.4s all ease;
+}
+.contHeader .contHeader_box2 .contHeader_box2_button .contHeader_box2_button_interno {
+  width: 150px;
+  height: 35px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+.contHeader .contHeader_box2 .contHeader_box2_button .contHeader_box2_button_interno .buttonText {
+  color: rgb(235, 235, 93);
+}
+.contHeader .contHeader_box2 .contHeader_box2_button:hover {
+  /*****************/
+  cursor: pointer;
+}
+.contHeader .contHeader_box2 .contHeader_box2_button:hover .contHeader_box2_button_externo {
+  transform: translateX(0px);
+}
+
+.contSectionOfertas {
+  width: 100%;
+  padding: 100px 0px;
+  background: rgb(255, 255, 255);
+}
+.contSectionOfertas .contSectionOfertas_titleTop {
+  text-align: center;
+  color: rgba(0, 21, 99, 0.63);
+  font-size: 40px;
+  line-height: 20px;
+}
+.contSectionOfertas .contSectionOfertas_titleBotton {
+  text-align: center;
+  color: rgb(12, 20, 59);
+  font-weight: 700;
+  font-size: 45px;
+}
+.contSectionOfertas .contSectionOfertas_grid {
+  margin-top: 50px;
+  width: 100%;
+  background: rgb(34, 159, 163);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "imageGridBox1        descriptionGridBox1     imageGridBox2        descriptionGridBox2" "descriptionGridBox3  imageGridBox3           descriptionGridBox4  imageGridBox4 ";
+}
+.contSectionOfertas .contSectionOfertas_grid .imageGridBox1 {
+  grid-area: imageGridBox1;
+}
+.contSectionOfertas .contSectionOfertas_grid .imageGridBox1 .contImageBox1 {
+  width: 100%;
+  height: 100%;
+  background: rgb(101, 5, 5);
+}
+.contSectionOfertas .contSectionOfertas_grid .descriptionGridBox1 {
+  grid-area: descriptionGridBox1;
+}
+.contSectionOfertas .contSectionOfertas_grid .descriptionGridBox1 .contDescription {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  background: rgb(255, 255, 255);
+  text-align: center;
+}
+.contSectionOfertas .contSectionOfertas_grid .descriptionGridBox1 .contDescription .contDescription_title {
+  font-size: 25px;
+  color: rgb(12, 20, 59);
+}
+.contSectionOfertas .contSectionOfertas_grid .descriptionGridBox1 .contDescription .contDescription_parrafo {
+  margin-top: 5px;
+}
+.contSectionOfertas .contSectionOfertas_grid .descriptionGridBox1 .contDescription .contDescription_precio {
+  margin: 5px auto;
+  border-radius: 50%;
+  background: rgb(12, 20, 59);
+  width: 50px;
+  height: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contSectionOfertas .contSectionOfertas_grid .imageGridBox2 {
+  grid-area: imageGridBox2;
+}
+.contSectionOfertas .contSectionOfertas_grid .imageGridBox2 .contImageBox2 {
+  width: 100%;
+  height: 100%;
+  background: rgb(101, 5, 5);
+}
+.contSectionOfertas .contSectionOfertas_grid .descriptionGridBox2 {
+  grid-area: descriptionGridBox2;
+}
+.contSectionOfertas .contSectionOfertas_grid .descriptionGridBox2 .contDescription {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  background: rgb(255, 255, 255);
+  text-align: center;
+}
+.contSectionOfertas .contSectionOfertas_grid .descriptionGridBox2 .contDescription .contDescription_title {
+  font-size: 25px;
+  color: rgb(12, 20, 59);
+}
+.contSectionOfertas .contSectionOfertas_grid .descriptionGridBox2 .contDescription .contDescription_parrafo {
+  margin-top: 5px;
+}
+.contSectionOfertas .contSectionOfertas_grid .descriptionGridBox2 .contDescription .contDescription_precio {
+  margin: 5px auto;
+  border-radius: 50%;
+  background: rgb(12, 20, 59);
+  width: 50px;
+  height: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contSectionOfertas .contSectionOfertas_grid .descriptionGridBox3 {
+  grid-area: descriptionGridBox3;
+}
+.contSectionOfertas .contSectionOfertas_grid .descriptionGridBox3 .contDescription {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  background: rgb(255, 255, 255);
+  text-align: center;
+}
+.contSectionOfertas .contSectionOfertas_grid .descriptionGridBox3 .contDescription .contDescription_title {
+  font-size: 25px;
+  color: rgb(12, 20, 59);
+}
+.contSectionOfertas .contSectionOfertas_grid .descriptionGridBox3 .contDescription .contDescription_parrafo {
+  margin-top: 5px;
+}
+.contSectionOfertas .contSectionOfertas_grid .descriptionGridBox3 .contDescription .contDescription_precio {
+  margin: 5px auto;
+  border-radius: 50%;
+  background: rgb(12, 20, 59);
+  width: 50px;
+  height: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contSectionOfertas .contSectionOfertas_grid .imageGridBox3 {
+  grid-area: imageGridBox3;
+}
+.contSectionOfertas .contSectionOfertas_grid .imageGridBox3 .contImageBox3 {
+  width: 100%;
+  height: 100%;
+  background: rgb(101, 5, 5);
+}
+.contSectionOfertas .contSectionOfertas_grid .descriptionGridBox4 {
+  grid-area: descriptionGridBox4;
+}
+.contSectionOfertas .contSectionOfertas_grid .descriptionGridBox4 .contDescription {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  background: rgb(255, 255, 255);
+  text-align: center;
+}
+.contSectionOfertas .contSectionOfertas_grid .descriptionGridBox4 .contDescription .contDescription_title {
+  font-size: 25px;
+  color: rgb(12, 20, 59);
+}
+.contSectionOfertas .contSectionOfertas_grid .descriptionGridBox4 .contDescription .contDescription_parrafo {
+  margin-top: 5px;
+}
+.contSectionOfertas .contSectionOfertas_grid .descriptionGridBox4 .contDescription .contDescription_precio {
+  margin: 5px auto;
+  border-radius: 50%;
+  background: rgb(12, 20, 59);
+  width: 50px;
+  height: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contSectionOfertas .contSectionOfertas_grid .imageGridBox4 {
+  grid-area: imageGridBox4;
+}
+.contSectionOfertas .contSectionOfertas_grid .imageGridBox4 .contImageBox4 {
+  width: 100%;
+  height: 100%;
+  background: rgb(101, 5, 5);
+}
+
+.contSectionSobreNos {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+.contSectionSobreNos .contSectionSobreNos_boxLeft {
+  width: 300px;
+  height: 450px;
+  padding: 40px 20px;
+  background: rgb(12, 20, 59);
+}
+.contSectionSobreNos .contSectionSobreNos_boxLeft .contSectionSobreNos_boxLeft_titleTop {
+  color: rgba(0, 21, 99, 0.63);
+  font-weight: 500;
+  font-size: 30px;
+  color: white;
+}
+.contSectionSobreNos .contSectionSobreNos_boxLeft .contSectionSobreNos_boxLeft_titleBotton {
+  color: rgb(235, 235, 93);
+  line-height: 35px;
+  font-weight: 700;
+  font-size: 40px;
+}
+.contSectionSobreNos .contSectionSobreNos_boxLeft .contSectionSobreNos_boxLeft_parrafo {
+  margin-top: 20px;
+  color: rgb(245, 245, 245);
+  font-weight: 100;
+}
+.contSectionSobreNos .contSectionSobreNos_boxLeft .contSectionSobreNos_boxLeft_button {
+  margin-top: 15px;
+  width: 180px;
+  height: 35px;
+  padding: 8px 0px;
+  background: rgba(0, 21, 99, 0.63);
+  border-radius: 8px;
+  border: 1px solid rgb(235, 235, 93);
+  position: relative;
+  overflow: hidden;
+}
+.contSectionSobreNos .contSectionSobreNos_boxLeft .contSectionSobreNos_boxLeft_button .contSectionSobreNos_boxLeft_button_sup {
+  background: rgb(12, 20, 59);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-100%);
+  transition: 0.5s all;
+}
+.contSectionSobreNos .contSectionSobreNos_boxLeft .contSectionSobreNos_boxLeft_button .contSectionSobreNos_boxLeft_button_inf {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contSectionSobreNos .contSectionSobreNos_boxLeft .contSectionSobreNos_boxLeft_button .contSectionSobreNos_boxLeft_button_inf .buttonTextSobre {
+  color: rgb(235, 235, 93);
+}
+.contSectionSobreNos .contSectionSobreNos_boxLeft .contSectionSobreNos_boxLeft_button:hover {
+  cursor: pointer;
+}
+.contSectionSobreNos .contSectionSobreNos_boxLeft .contSectionSobreNos_boxLeft_button:hover .contSectionSobreNos_boxLeft_button_sup {
+  transform: translate(0%);
+  background: rgb(12, 20, 59);
+}
+.contSectionSobreNos .contSectionSobreNos_boxRight {
+  width: 600px;
+  height: 450px;
+  position: relative;
+}
+.contSectionSobreNos .contSectionSobreNos_boxRight .contSectionSobreNos_boxRight_title {
+  text-align: center;
+  color: rgb(12, 20, 59);
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+}
+.contSectionSobreNos .contSectionSobreNos_boxRight .contSectionSobreNos_boxRight_interno {
+  margin-top: 25px;
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.contSectionClientes {
+  width: 100%;
+  padding-top: 80px;
+  background: rgb(252, 251, 251);
+}
+.contSectionClientes .contSectionClientes_titleTop {
+  text-align: center;
+  color: rgba(0, 21, 99, 0.63);
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 29px;
+}
+.contSectionClientes .contSectionClientes_titleBotton {
+  text-align: center;
+  color: rgb(12, 20, 59);
+  font-weight: 700;
+  font-size: 35px;
+}
+.contSectionClientes .contSectionClientes_contentSlader {
+  margin-top: 35px;
+  width: 100%;
+  height: 400px;
+  background: rgb(235, 147, 147);
+  position: relative;
+  overflow: hidden;
+}
+.contSectionClientes .contSectionClientes_contentSlader .contentSladerBase {
+  width: 300%;
+  height: 400px;
+  background: violet;
+  display: flex;
+  flex-direction: row;
+}
+.contSectionClientes .contSectionClientes_contentSlader .contentSladerBase .contentSladerBase_Box {
+  width: 100%;
+  height: 400px;
+  background: rgb(12, 20, 59);
+}
+.contSectionClientes .contSectionClientes_contentSlader .contentSladerBase .contentSladerBase_Box .contentSladerBase_Box_image {
+  width: 110px;
+  height: 110px;
+  background: rgb(218, 214, 214);
+  margin: 20px auto;
+  margin-top: 50px;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 255, 255);
+  overflow: hidden;
+}
+.contSectionClientes .contSectionClientes_contentSlader .contentSladerBase .contentSladerBase_Box .contentSladerBase_Box_parrafo {
+  width: 80%;
+  color: white;
+  margin: 20px auto;
+  text-align: center;
+}
+.contSectionClientes .contSectionClientes_contentSlader .contentSladerBase .contentSladerBase_Box .contentSladerBase_Box_name {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+}
+.contSectionClientes .contSectionClientes_contentSlader .arrowNext {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+.contSectionClientes .contSectionClientes_contentSlader .arrowNext .iconArrow {
+  color: rgb(235, 235, 93);
+  font-size: 30px;
+}
+.contSectionClientes .contSectionClientes_contentSlader .arrowPrev {
+  position: absolute;
+  bottom: 10px;
+  right: 60px;
+  cursor: pointer;
+}
+.contSectionClientes .contSectionClientes_contentSlader .arrowPrev .iconArrow {
+  color: rgb(235, 235, 93);
+  font-size: 30px;
+}
+
+.contFooter {
+  width: 100%;
+  padding: 20px 0px;
+  background: rgb(12, 20, 59);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contFooter .contFooterLogo {
+  width: 40px;
+  height: 40px;
+  background: rgb(79, 79, 238);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contFooter .contFooterLogo .contFooterLogo_text {
+  color: white;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.contFooter .contFooterNav {
+  width: 600px;
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contFooter .contFooterNav .contFooter_li {
+  list-style: none;
+}
+.contFooter .contFooterNav .contFooter_li .footerLink {
+  text-decoration: none;
+  color: white;
+}
+.contFooter .contFooterNav .contFooter_li .footerLink:hover {
+  color: rgb(235, 235, 93);
+}
+
+/*# sourceMappingURL=main.css.map */
