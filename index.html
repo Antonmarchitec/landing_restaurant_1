@@ -12,7 +12,20 @@
     <title>Protecto restaurant</title>
 </head>
 <body>
+    <!--PRELOADER DE LA PAGINA STAR
+    <div class="loader" id="loader">
+      <img src="img/rodaje.gif" class="rodaje">
+      <p style="color: #56fbd3;">Cargando Portafolio..</p>
+    </div>-->
+     <!--PRELOADER DE LA PAGINA END-->
+    <div class="cargarDowloader" id="loader">
+        <img src="./images/loader.gif" width="100px" height="100px">
+        <h2 class="Loading">Loading...</h2>  
+    </div>
+
+
     <div class="contGridBase">
+        
         <div class="GridTablero">
             <nav class="contTablero">
                 <div class="contTablero_cicle"> 
@@ -350,7 +363,10 @@
           </footer>
         </div>
     </div>
-
+    <div class="btnTop">
+        <img src="./images/arrow.png" alt="arrow" width="100%" height="100%" id="subir">  
+    </div>
+    
 
 
 
@@ -359,6 +375,7 @@
     <!-- Personalizados -->
     <script src="./js/especiales.js"></script>
     <script src="./js/sladerTestimonios.js"></script>
+    <script src="./js/loader.js"></script>
 
     <!--  Swiper CDN -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
