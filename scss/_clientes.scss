@@ -64,7 +64,7 @@
         .arrowNext{
             position: absolute;
             bottom:10px;
-            right: 20px;
+            left: 60px;
             cursor: pointer;
             .iconArrow{
                 color:$color-primario-yellow;
@@ -74,7 +74,7 @@
         .arrowPrev{
             position: absolute;
             bottom: 10px;
-            right: 60px;
+            left: 20px;
             cursor: pointer;
             .iconArrow{
                 color:$color-primario-yellow;

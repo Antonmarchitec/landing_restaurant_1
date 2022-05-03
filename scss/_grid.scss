@@ -15,7 +15,8 @@
     font-family: 'Antonio', sans-serif;
 }
 
-body{
+body,
+html{
     background: rgb(222, 222, 222);
     scroll-behavior:smooth;
 }
@@ -26,7 +27,7 @@ body{
     max-width: 1440px;
     padding: 0px 0px;
     margin: auto;
-    background: rgb(81, 1, 57);
+    //background: rgb(81, 1, 57);
     display: grid;
     //grid-gap:1em;
     grid-template-columns: 280px 1fr;
@@ -35,7 +36,9 @@ body{
                          "GridTablero   GridHeader"
                          "GridTablero   GridSectionOfertas"
                          "GridTablero   GridSectionSobreNosotros"
+                         "GridTablero   GridMapa"
                          "GridTablero   GridSectionClientes"
+                         "GridTablero   GridFormulario    "
                          "GridTablero   GridFooter";
 
     .GridTablero{
@@ -65,11 +68,25 @@ body{
         grid-area: GridSectionSobreNosotros; 
     }
 
+    .GridMapa{
+        //padding: 10px 0px;
+        //background: brown;
+        grid-area: GridMapa;
+        display: none; 
+    }
+
     .GridSectionClientes{
         //padding: 10px 0px;
         //background: brown;
         grid-area: GridSectionClientes; 
     }
+
+    .GridFormulario{
+        //padding: 10px 0px;
+        //background: brown;
+        grid-area: GridFormulario; 
+    }
+
     .GridFooter{
         //padding: 10px 0px;
         //background: brown;

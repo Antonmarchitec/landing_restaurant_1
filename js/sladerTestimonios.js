@@ -15,23 +15,23 @@ document.addEventListener('click', (e) =>{
         //console.log("le di a siguiente")
         let elementoFoco = document.querySelectorAll("#box")[0]
         contentSladerBase.style.marginLeft = "-200%"
-        contentSladerBase.style.transition = "0.8s all"
+        contentSladerBase.style.transition = "0.2s all"
         setTimeout(()=>{
             contentSladerBase.style.transition = "none"
             contentSladerBase.insertAdjacentElement("beforeend",elementoFoco)
             contentSladerBase.style.marginLeft = "-100%"
-        },800)
+        },200)
     }else if(e.target.id === "arrowPrev"){
         //console.log("le di a derecha")
         let box = document.querySelectorAll("#box")
         let ultimoEle = box[box.length - 1]
         contentSladerBase.style.marginLeft = "0"
-        contentSladerBase.style.transition = "0.8s all"
+        contentSladerBase.style.transition = "0.2s all"
         setTimeout(()=>{
             contentSladerBase.style.transition = "none"
             contentSladerBase.insertAdjacentElement("afterbegin", ultimoEle)
             contentSladerBase.style.marginLeft = "-100%"
-        },800)
+        },200)
     }
 })
 

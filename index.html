@@ -5,19 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <script src="https://kit.fontawesome.com/b7fb745aab.js" crossorigin="anonymous"></script>
-    
+    <script src="https://kit.fontawesome.com/b7fb745aab.js" crossorigin="anonymous"></script>    
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/swiper.css">
     <title>Protecto restaurant</title>
 </head>
 <body>
-    <!--PRELOADER DE LA PAGINA STAR
-    <div class="loader" id="loader">
-      <img src="img/rodaje.gif" class="rodaje">
-      <p style="color: #56fbd3;">Cargando Portafolio..</p>
-    </div>-->
-     <!--PRELOADER DE LA PAGINA END-->
+    
+    <!--PRELOADER DE LA PAGINA STAR-->
     <div class="cargarDowloader" id="loader">
         <img src="./images/loader.gif" width="100px" height="100px">
         <h2 class="Loading">Loading...</h2>  
@@ -37,7 +32,7 @@
                     <li class="contTablero_ul_li"><a href="#ganchoAcerca" class="liEnlace"><i class="iconMenu fa-solid fa-menorah"></i>Acerca de<i class="iconArrow fa-solid fa-arrow-right"></i></a></li>
                     <li class="contTablero_ul_li"><a href="#ganchoOfertas" class="liEnlace"><i class="iconMenu fa-solid fa-plate-wheat"></i>Platos especiales<i class="iconArrow fa-solid fa-arrow-right"></i></a></li>
                     <li class="contTablero_ul_li"><a href="#ganchoTestimonios" class="liEnlace"><i class="iconMenu fa-solid fa-chalkboard-user"></i>Testimonios<i class="iconArrow fa-solid fa-arrow-right"></i></a></li>
-                    <li class="contTablero_ul_li"><a href="/" class="liEnlace"><i class="iconMenu fa-solid fa-file-signature"></i>Contacto<i class="iconArrow fa-solid fa-arrow-right"></i></a></li>
+                    <li class="contTablero_ul_li"><a href="#ganchoFormulario" class="liEnlace"><i class="iconMenu fa-solid fa-file-signature"></i>Contacto<i class="iconArrow fa-solid fa-arrow-right"></i></a></li>
                 </ul>
 
                 <div class="contTablero_pie">
@@ -285,6 +280,15 @@
           </section>
         </div>
 
+        <div class="GridMapa">
+          <section class="contMapa">
+            <h1 class="contMapa_title">Nuestra sucursal</h1>
+            <div class="contMapa_divMapa" id="map">
+              
+            </div>
+          </section>
+        </div>
+
         <div class="GridSectionClientes" id="ganchoTestimonios">
           <section class="contSectionClientes">
              <h3 class="contSectionClientes_titleTop">Testimonios</h3>
@@ -348,6 +352,43 @@
           </section>
         </div>
 
+        <div class="GridFormulario" id="ganchoFormulario">
+          <div class="contFormulario">
+            <form class="contFormulario_form">
+
+              <div class="contFormulario_Top">
+                <h2 class="contFormulario_Top_title">Webprofits</h2>
+                <h3 class="contFormulario_Top_text">Nedd to talk <span class="text">1300827149</span></h3>
+              </div>
+
+              <div class="contFormulario_bottom">
+                <div class="contFormulario_bottom_left">
+                  <h2 class="contFormulario_bottom_left_title"> FREE competitor<>
+                  <span class="titleText">SEO analisys</span></h2>
+
+                  <p class="contFormulario_bottom_left_paraphe">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum et sed molestias non. Dolorem autem modi provident rerum possimus error laboriosam aliquam! Voluptatem quo vitae odio dolor in animi dicta.
+                  </p>
+
+                  <div class="contFormulario_bottom_left_input">
+                    <input type="text" placeholder=" Enter your website" class="input">
+                    <a href="/">
+                      <input type="button" value="NEXT" class="inputButton">
+                    </a>
+                  </div>
+
+                  <a href="/" class="contFormulario_bottom_left_link">Lorem ipsum adipisicing elit. Ut, eaque?</a>
+                </div>
+
+                <div class="contFormulario_bottom_right">
+                  <img src="./images/dibujo restauranr.png" width="100%" height="100%">
+                </div>
+              </div>
+              
+            </form>
+          </div>	
+        </div>
+
         <div class="GridFooter">
           <footer class="contFooter">
             <div class="contFooterLogo">
@@ -363,15 +404,17 @@
           </footer>
         </div>
     </div>
+    
     <div class="btnTop" id="btnTop">
-        <img src="./images/arrow.png" alt="arrow" width="100%" height="100%" id="subir">  
+        <a href="#ganchoHeader">
+          <img src="./images/arrow.png" alt="arrow" width="100%" height="100%" id="subir">  
+        </a>
     </div>
     
 
 
 
-
-
+    
     <!-- Personalizados -->
     <script src="./js/especiales.js"></script>
     <script src="./js/sladerTestimonios.js"></script>
@@ -402,7 +445,16 @@
         },
       });
     </script>
-     
+
+
+    <!--
+      Link api maps
+      https://developers.google.com/maps/documentation/javascript-->
+    <!--google maps (Dalto) -->
+    <script src="./js/map.js"></script>
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDF52XM11ftI_UQLtmyOwgMwlrzs82H6m4&callback=iniciarMap"></script>
+    
     
 </body>
 </html>

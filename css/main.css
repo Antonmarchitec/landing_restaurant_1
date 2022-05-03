@@ -6,7 +6,8 @@
   font-family: "Antonio", sans-serif;
 }
 
-body {
+body,
+html {
   background: rgb(222, 222, 222);
   scroll-behavior: smooth;
 }
@@ -16,11 +17,10 @@ body {
   max-width: 1440px;
   padding: 0px 0px;
   margin: auto;
-  background: rgb(81, 1, 57);
   display: grid;
   grid-template-columns: 280px 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "GridTablero   GridHeader" "GridTablero   GridHeader" "GridTablero   GridSectionOfertas" "GridTablero   GridSectionSobreNosotros" "GridTablero   GridSectionClientes" "GridTablero   GridFooter";
+  grid-template-areas: "GridTablero   GridHeader" "GridTablero   GridHeader" "GridTablero   GridSectionOfertas" "GridTablero   GridSectionSobreNosotros" "GridTablero   GridMapa" "GridTablero   GridSectionClientes" "GridTablero   GridFormulario    " "GridTablero   GridFooter";
 }
 .contGridBase .GridTablero {
   grid-area: GridTablero;
@@ -38,8 +38,15 @@ body {
 .contGridBase .GridSectionSobreNosotros {
   grid-area: GridSectionSobreNosotros;
 }
+.contGridBase .GridMapa {
+  grid-area: GridMapa;
+  display: none;
+}
 .contGridBase .GridSectionClientes {
   grid-area: GridSectionClientes;
+}
+.contGridBase .GridFormulario {
+  grid-area: GridFormulario;
 }
 .contGridBase .GridFooter {
   grid-area: GridFooter;
@@ -499,6 +506,25 @@ body {
   right: 0px;
 }
 
+.contMapa {
+  width: 100%;
+  padding: 20px 0px;
+  box-shadow: 0px 0px 50px rgb(12, 20, 59);
+}
+.contMapa .contMapa_title {
+  margin-top: 40px;
+  text-align: center;
+  color: rgb(12, 20, 59);
+  font-size: 40px;
+}
+.contMapa .contMapa_divMapa {
+  margin-top: 40px;
+  width: 100%;
+  height: 500px;
+  padding: 20px 0px;
+  background: yellow;
+}
+
 .contSectionClientes {
   width: 100%;
   padding-top: 80px;
@@ -562,7 +588,7 @@ body {
 .contSectionClientes .contSectionClientes_contentSlader .arrowNext {
   position: absolute;
   bottom: 10px;
-  right: 20px;
+  left: 60px;
   cursor: pointer;
 }
 .contSectionClientes .contSectionClientes_contentSlader .arrowNext .iconArrow {
@@ -572,12 +598,110 @@ body {
 .contSectionClientes .contSectionClientes_contentSlader .arrowPrev {
   position: absolute;
   bottom: 10px;
-  right: 60px;
+  left: 20px;
   cursor: pointer;
 }
 .contSectionClientes .contSectionClientes_contentSlader .arrowPrev .iconArrow {
   color: rgb(235, 235, 93);
   font-size: 30px;
+}
+
+.contFormulario {
+  width: 100%;
+}
+.contFormulario .contFormulario_form {
+  width: 100%;
+  padding: 10px 0px;
+  background: rgb(12, 20, 59);
+}
+.contFormulario .contFormulario_form .contFormulario_Top {
+  margin-top: 50px;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.contFormulario .contFormulario_form .contFormulario_Top .contFormulario_Top_title {
+  color: white;
+}
+.contFormulario .contFormulario_form .contFormulario_Top .contFormulario_Top_text {
+  color: rgb(235, 235, 93);
+  font-weight: 300;
+  font-size: 15px;
+}
+.contFormulario .contFormulario_form .contFormulario_Top .contFormulario_Top_text .text {
+  color: white;
+}
+.contFormulario .contFormulario_form .contFormulario_bottom {
+  margin-top: 40px;
+  width: 100%;
+  padding: 80px 20px;
+  background: rgba(0, 21, 99, 0.631372549);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.contFormulario .contFormulario_form .contFormulario_bottom .contFormulario_bottom_left {
+  width: 40%;
+  padding: 10px 0px;
+  position: relative;
+}
+.contFormulario .contFormulario_form .contFormulario_bottom .contFormulario_bottom_left .contFormulario_bottom_left_title {
+  color: rgb(235, 235, 93);
+  font-size: 35px;
+}
+.contFormulario .contFormulario_form .contFormulario_bottom .contFormulario_bottom_left .contFormulario_bottom_left_title .titleText {
+  color: white;
+}
+.contFormulario .contFormulario_form .contFormulario_bottom .contFormulario_bottom_left .contFormulario_bottom_left_paraphe {
+  margin-top: 20px;
+  color: white;
+  font-weight: 300;
+}
+.contFormulario .contFormulario_form .contFormulario_bottom .contFormulario_bottom_left .contFormulario_bottom_left_input {
+  margin: 10px 0px;
+  width: 100%;
+  padding: 5px 0px;
+}
+.contFormulario .contFormulario_form .contFormulario_bottom .contFormulario_bottom_left .contFormulario_bottom_left_input .input {
+  width: 70%;
+  border: none;
+  padding: 10px;
+  color: rgb(12, 20, 59);
+  border: 1px solid transparent;
+  font-weight: 300;
+}
+.contFormulario .contFormulario_form .contFormulario_bottom .contFormulario_bottom_left .contFormulario_bottom_left_input .inputButton {
+  width: 27%;
+  padding: 10px;
+  border: none;
+  background: yellow;
+  color: rgb(12, 20, 59);
+  border: 1px solid transparent;
+  transition: 0.3s ease-in-out;
+}
+.contFormulario .contFormulario_form .contFormulario_bottom .contFormulario_bottom_left .contFormulario_bottom_left_input .inputButton:hover {
+  cursor: pointer;
+  background: rgba(0, 21, 99, 0.631372549);
+  border: 1px solid rgb(235, 235, 93);
+  color: white;
+}
+.contFormulario .contFormulario_form .contFormulario_bottom .contFormulario_bottom_left .contFormulario_bottom_left_link {
+  color: rgb(218, 229, 70);
+  text-decoration: none;
+  position: absolute;
+  right: 8px;
+}
+.contFormulario .contFormulario_form .contFormulario_bottom .contFormulario_bottom_right {
+  width: 40%;
+  height: 400px;
+  padding: 10px 0px;
+  margin-right: 40px;
 }
 
 .contFooter {
