@@ -112,3 +112,121 @@
         }
     }
 }
+
+
+
+
+
+@media (min-width:1025px) and (max-width:1200px){
+    .contFormulario{
+        width: 100%;
+        //padding: 10px 0px;
+        .contFormulario_form{
+            width: 100%;
+            padding: 10px 0px;
+            background:$color-primario-blue;
+            .contFormulario_Top{
+                margin-top: 50px;
+                width: 100%;
+                padding: 10px 20px;
+                //background: rgba(255, 0, 0, 0.267);
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                .contFormulario_Top_title{
+                    color: white;
+                }
+                .contFormulario_Top_text{
+                    color: $color-primario-yellow;
+                    font-weight: 300;
+                    font-size: 15px;
+                    .text{
+                        color: white;
+                    }
+                }
+            }
+    
+            .contFormulario_bottom{
+                margin-top: 40px;
+                width: 100%;
+                padding: 80px 20px;
+                background:$color-primario-blue-trans;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: flex-start;
+                .contFormulario_bottom_left{
+                    width: 40%;
+                    padding: 10px 0px;
+                    //background: rgb(39, 39, 39);
+                    position: relative;
+                    .contFormulario_bottom_left_title{
+                        color: $color-primario-yellow;
+                        font-size: 35px;
+                        .titleText{
+                            color: white;
+                        }
+                    }
+                    .contFormulario_bottom_left_paraphe{
+                        margin-top: 20px;
+                        color: white;
+                        font-weight: 300;
+                    }
+    
+                    .contFormulario_bottom_left_input{
+                        margin: 10px 0px;
+                        width: 100%;
+                        padding: 5px 0px;
+                        //background-color: aquamarine;
+                        
+                        .input{
+                           width:70%;
+                           border: none;
+                           padding: 10px;
+                           color: $color-primario-blue;
+                           border: 1px solid transparent;
+                           font-weight: 300;
+    
+                        }
+                        .inputButton{
+                           width: 27%;
+                           padding: 10px;
+                           border: none;
+                           background: yellow;
+                           color: $color-primario-blue;
+                           border: 1px solid transparent;
+                           transition: 0.3s ease-in-out;
+                        }
+                        .inputButton:hover{
+                            cursor: pointer;
+                            background:$color-primario-blue-trans;
+                            border: 1px solid $color-primario-yellow;
+                            color: white;
+                        }
+                    }
+    
+                    .contFormulario_bottom_left_link{
+                        color: rgb(218, 229, 70);
+                        text-decoration: none;
+                        //background: fuchsia;
+                        position: absolute;
+                        right: 8px;
+                    }
+                }
+    
+    
+    
+                .contFormulario_bottom_right{
+                    width: auto;
+                    height: 340px;
+                    padding: 10px 0px;
+                    margin-right: 40px;
+                    //background: grey;
+                }
+            }
+        }
+    }
+}

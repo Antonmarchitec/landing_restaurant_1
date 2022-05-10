@@ -6,6 +6,19 @@
     height: 100vh;
     padding: 10px 0px;
     background: $color-primario-blue;
+    position: relative;
+    z-index: 100;
+    .contTablero_btnResp{
+        width: 50px;
+        height: 50px;
+        background: greenyellow;
+        position: absolute;
+        right: 10px;
+        top: 50px;
+        display: none;
+        
+    }
+
     .contTablero_cicle{
         width:100px;
         height:100px;
@@ -97,3 +110,31 @@
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
