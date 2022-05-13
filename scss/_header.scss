@@ -48,7 +48,8 @@
             .contHeader_box2_button_externo{
                 width: 100%;
                 height: 100%;
-                background: $color-primario-blue;
+                //background: $color-primario-blue;
+                background:$color-primario-yellow ;
                 transform: translate(-100%);
                 transition: 0.4s all ease;
             }
@@ -64,6 +65,8 @@
                 //background: rgb(22, 198, 137);
                 .buttonText{
                     color:$color-primario-yellow;
+                    transition: 0.4s all ease;
+
                 }
 
             }  
@@ -73,7 +76,11 @@
             cursor: pointer;
             .contHeader_box2_button_externo{
                 transform: translateX(0px);
-                
+            }
+            .contHeader_box2_button_interno{
+                .buttonText{
+                    color: $color-primario-blue;
+                }
             }
         }
 
