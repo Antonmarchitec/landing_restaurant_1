@@ -32,3 +32,14 @@
         height: 42px;
     }
 }
+
+
+
+
+@media (min-width:320px) and (max-width:1024px){
+    .btnTop{
+        width: 42px;
+        height: 42px;
+        z-index: 100;
+    }
+}

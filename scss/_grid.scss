@@ -184,3 +184,98 @@ RESPONSIVE DESING OFICIAL
     
 }
 
+
+
+
+
+
+
+
+
+/*******************************************************************
+---------------------------------------------------------------------
+--------------------------------------------------------------------*/
+
+@media (min-width:641px) and (max-width:1024px){
+    .contGridBase{
+        width: 100%;
+        max-width: 1440px;
+        padding: 0px 0px;
+        margin: auto;
+        
+        display: grid;
+        //grid-gap:1em;
+        grid-template-columns: 260px 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "GridHeader                 GridHeader"
+                             "GridHeader                 GridHeader"
+                             "GridSectionOfertas         GridSectionOfertas"
+                             "GridSectionSobreNosotros   GridSectionSobreNosotros"
+                             "GridMapa                   GridMapa"
+                             "GridSectionClientes        GridSectionClientes"
+                             "GridFormulario             GridFormulario"
+                             "GridFooter                 GridFooter";
+    
+        .GridTablero{
+            //padding: 10px 0px;
+            //background: rgb(226, 230, 33);
+            grid-area: GridTablero; 
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            margin-left: -100%;
+            transition: 0.3s ease all;
+            opacity: 0;
+        }  
+        .GridTablero_JS{
+            margin-left: 0;
+            opacity: 1;
+        }      
+    }
+}
+
+
+
+
+
+/*******************************************************************
+---------------------------------------------------------------------
+--------------------------------------------------------------------*/
+@media (min-width:320px)  and (max-width:640px){
+    .contGridBase{
+        width: 100%;
+        max-width: 1440px;
+        padding: 0px 0px;
+        margin: auto;
+        display: grid;
+        //grid-gap:1em;
+        grid-template-columns: 260px 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "GridHeader                 GridHeader"
+                             "GridHeader                 GridHeader"
+                             "GridSectionOfertas         GridSectionOfertas"
+                             "GridSectionSobreNosotros   GridSectionSobreNosotros"
+                             "GridMapa                   GridMapa"
+                             "GridSectionClientes        GridSectionClientes"
+                             "GridFormulario             GridFormulario"
+                             "GridFooter                 GridFooter";
+    
+        .GridTablero{
+            //padding: 10px 0px;
+            //background: rgb(226, 230, 33);
+            grid-area: GridTablero; 
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            margin-left: -100%;
+            transition: 0.3s ease all;
+            opacity: 0;
+        }  
+        .GridTablero_JS{
+            margin-left: 0;
+            opacity: 1;
+        }      
+    }
+}
+
+
