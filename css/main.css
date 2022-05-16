@@ -291,7 +291,7 @@ RESPONSIVE DESING OFICIAL
     width: 100%;
     height: 100vh;
     padding: 10px 0px;
-    background: rgba(0, 21, 99, 0.631372549);
+    background: rgb(12, 20, 59);
     position: relative;
   }
   .contTablero .contTablero_btnResp {
@@ -323,7 +323,7 @@ RESPONSIVE DESING OFICIAL
     text-transform: uppercase;
   }
   .contTablero .contTablero_ul {
-    width: 85%;
+    width: 280px;
     margin: 30px auto;
     padding: 10px 0px;
     background: rgb(12, 20, 59);
@@ -490,7 +490,6 @@ RESPONSIVE DESING OFICIAL
   .contHeader {
     width: 100%;
     padding: 10px 0px;
-    background: rgb(52, 52, 52);
     position: relative;
     z-index: 0;
   }

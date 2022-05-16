@@ -126,7 +126,7 @@
         width: 100%;
         height: 100vh;
         padding: 10px 0px;
-        background: $color-primario-blue-trans;
+        background: $color-primario-blue;
         position: relative;
         //pointer-events:unset;
         .contTablero_btnResp{  
@@ -162,7 +162,7 @@
         }
     
         .contTablero_ul{
-            width:85%;
+            width:280px;
             margin: 30px auto;
             padding: 10px 0px;
             background: $color-primario-blue;
